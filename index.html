@@ -1,16 +1,6 @@
-table.sortable th::after, th.sorttable_sorted::after, th.sorttable_sorted_reverse::after {
-  content: " ";
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-}
-th.sorttable_sorted::after {
-  background: url(my-sorted-icon.png);
-  background-size: contain;
-}
-th.sorttable_sorted_reverse::after {
-  background: url(my-sorted-reversed-icon.png);
-  background-size: cover;
-}
-#sorttable_sortfwdind, #sorttable_sortrevind { display: none; } 
-
+<table class="sortable">
+<tr><th>Number (spelled)</th><th>Person</th></tr>
+<tr><td sorttable_customkey="2">two</td><td>Jan</td></tr>
+<tr><td sorttable_customkey="3">three</td><td>Bruce</td></tr>
+<tr><td sorttable_customkey="1">one</td><td>Steve</td></tr>
+</table>
